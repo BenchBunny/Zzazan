@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZZWelcomeViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LoginSignupBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tgv-uJ-0Nr">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GIIG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l7W-UJ-UHe">
+                    <rect key="frame" x="150" y="188" width="76" height="37"/>
+                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="36"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m2S-2k-Kvs">
+                    <rect key="frame" x="63" y="420" width="248" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="m2S-2k-Kvs" secondAttribute="height" multiplier="62:7" id="Soc-vm-VAh"/>
+                    </constraints>
+                    <state key="normal" image="ContinueWithFacebook.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="facebookButtonPressed:" destination="-1" eventType="touchUpInside" id="eKu-N9-Z9f"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puv-tv-bWL">
+                    <rect key="frame" x="63" y="468" width="251" height="22"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="puv-tv-bWL" secondAttribute="height" multiplier="251:22" id="bBj-Tg-4PQ"/>
+                    </constraints>
+                    <state key="normal" image="SignupWithEmail.png">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="signupButtonPressed:" destination="-1" eventType="touchUpInside" id="PB6-1d-giR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="l7W-UJ-UHe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="375/1334" id="6KY-rN-Q5Y"/>
+                <constraint firstItem="Tgv-uJ-0Nr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8GD-Fy-RmK"/>
+                <constraint firstItem="puv-tv-bWL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="63/375" id="9Of-Ux-FPx"/>
+                <constraint firstAttribute="bottom" secondItem="Tgv-uJ-0Nr" secondAttribute="bottom" id="DiI-6z-AhJ"/>
+                <constraint firstItem="m2S-2k-Kvs" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="840/1334" id="H87-lC-EY3"/>
+                <constraint firstAttribute="centerX" secondItem="l7W-UJ-UHe" secondAttribute="centerX" id="HQl-6K-OCt"/>
+                <constraint firstItem="Tgv-uJ-0Nr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="HRG-em-lDy"/>
+                <constraint firstItem="puv-tv-bWL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="bottom" multiplier="468/667" id="RWM-of-boS"/>
+                <constraint firstAttribute="centerX" secondItem="puv-tv-bWL" secondAttribute="centerX" constant="-1" id="fJH-OW-prv"/>
+                <constraint firstItem="m2S-2k-Kvs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="trailing" multiplier="63/375" id="j1I-Wn-vjD"/>
+                <constraint firstAttribute="centerX" secondItem="m2S-2k-Kvs" secondAttribute="centerX" constant="0.5" id="jGB-h9-I1J"/>
+                <constraint firstAttribute="trailing" secondItem="Tgv-uJ-0Nr" secondAttribute="trailing" id="kDX-aW-MGo"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="246.5" y="386.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ContinueWithFacebook.png" width="248" height="28"/>
+        <image name="LoginSignupBackground.png" width="375" height="667"/>
+        <image name="SignupWithEmail.png" width="251" height="18"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

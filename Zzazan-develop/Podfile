@@ -1,0 +1,19 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+inhibit_all_warnings!
+
+pod 'RSKImageCropper'
+pod 'SVProgressHUD', '~> 1.1'
+pod 'EGOCache', '~> 2.1'
+pod 'TTTAttributedLabel', '~> 1.13'
+pod 'SDWebImage', '~> 3.7'
+pod 'ionicons', '~> 2.0'
+pod 'IGIdenticon', '~> 0.2'
+pod 'Firebase', '>= 2.2.0'
+pod 'SwipeView', '~> 1.3'
+pod 'JSQMessagesViewController', '~> 6.1'
+pod 'MJRefresh', '~> 1.4'
+
+target 'ZzazanTests', :exclusive => true do
+    pod 'KIF', '~> 3.0', :configurations => ['Debug']
+end

@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.4.0"
+  },
+  "applications": {
+    "Zzazan": {
+      "applicationId": "jz1aAXzdT56KjGUBh72ZIR4GFnCxqcxVfMAs6iNI",
+      "masterKey": "ouDygAXxjBUwp0spdjpvXRpzDyxrIhYhCtxr232x"
+    },
+    "_default": {
+      "link": "Zzazan"
+    }
+  }
+}

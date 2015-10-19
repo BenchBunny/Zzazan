@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZZAboutZZazanViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kl1-D0-YT0">
+                    <rect key="frame" x="138" y="90" width="100" height="101"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="3bu-sC-SG1"/>
+                        <constraint firstAttribute="height" constant="101" id="KdC-y9-Tap"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Zzazan 1.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z4k-qH-X7T">
+                    <rect key="frame" x="135" y="223" width="105" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="J66-dI-BYb"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Copperplate-Light" family="Copperplate" pointSize="20"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="Kl1-D0-YT0" secondAttribute="centerX" id="OEs-mN-Rt3"/>
+                <constraint firstAttribute="centerX" secondItem="z4k-qH-X7T" secondAttribute="centerX" id="VBD-aK-Vgy"/>
+                <constraint firstItem="Kl1-D0-YT0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="90" id="fgy-zL-2CE"/>
+                <constraint firstItem="z4k-qH-X7T" firstAttribute="top" secondItem="Kl1-D0-YT0" secondAttribute="bottom" constant="32" id="xjf-xI-E8b"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="685.5" y="507.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="AppIcon.png" width="180" height="180"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
